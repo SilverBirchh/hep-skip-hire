@@ -7,7 +7,7 @@ export default function DatePicker() {
   const [startDate, setStartDate] = useState<Date | null>(null);
 
   return (
-    <div className="relative w-40">
+    <div className="datepicker relative w-40">
       <ReactDatePicker
         selected={startDate}
         onChange={(date) => setStartDate(date)}
@@ -74,20 +74,25 @@ const ButtonInput = forwardRef(({ value, onClick }, ref) => (
     // @ts-expect-error
     ref={ref}
     type="button"
-    className="inline-flex justify-start w-full px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-blue-500"
+    className="inline-flex justify-start w-full text-gray-400 bg-white rounded"
   >
     <input
-      style={{ display: "none" }}
+      style={{
+        visibility: "hidden",
+        position: "absolute",
+        height: 0,
+        width: 0,
+      }}
       className="hidden"
-      disabled
       name="date"
-      hidden
       value={!value ? "none" : format(new Date(value), "dd MMMM yyyy")}
     />
     {!value ? (
       <span>Delivery date</span>
     ) : (
-      format(new Date(value), "dd MMMM yyyy")
+      <span className="text-black">
+        {format(new Date(value), "dd MMMM yyyy")}
+      </span>
     )}
   </button>
 ));
