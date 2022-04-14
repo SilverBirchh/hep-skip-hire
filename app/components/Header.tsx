@@ -8,12 +8,12 @@ function Header() {
   const { scrollY } = useScroll();
 
   return (
-    <header className="header-area">
-      <div
-        className={classNames("navigation", {
-          sticky: scrollY > 50,
-        })}
-      >
+    <header
+      className={classNames("header-area stuck", {
+        moving: scrollY > 50,
+      })}
+    >
+      <div className={classNames("navigation", "stuck")}>
         <div className="container">
           <div className="row">
             <div className="w-full">
@@ -91,39 +91,6 @@ function Header() {
               </nav>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div
-        id="home"
-        className="relative z-10 header-hero"
-        style={{ backgroundImage: "url(/header-bg.jpg)" }}
-      >
-        <div className="container">
-          <div className="justify-center row">
-            <div className="w-full lg:w-5/6 xl:w-2/3 flex flex-col items-center">
-              <div className="pt-48 pb-64 text-center header-content">
-                <h3 className="mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl text-center">
-                  First Class Waste Management
-                </h3>
-                <p className="px-5 mb-10 text-xl text-gray-700">
-                  Friendly and reliable with competitive rates for household
-                  clearances, garden clearances, trade waste and industrial
-                  waste
-                </p>
-                <ul className="flex flex-wrap justify-center">
-                  <li>
-                    <a className="mx-3 main-btn gradient-btn" href="#">
-                      GET IN TOUCH
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-0 z-20 w-full h-auto -mb-1 header-shape">
-          <img src="/header-shape.svg" alt="shape" />
         </div>
       </div>
     </header>

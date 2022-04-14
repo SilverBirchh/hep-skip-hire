@@ -1323,6 +1323,16 @@ p {
   background-color: transparent;
 }
 
+.stuck {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.stuck.moving {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
 .sticky {
   position: fixed;
   padding-top: 1rem;
@@ -1389,15 +1399,15 @@ p {
   transition-duration: 300ms;
 }
 
-.navbar-nav .nav-item.active a,
+.navbar-nav .nav-item a.active,
 .navbar-nav .nav-item a:hover {
   --text-opacity: 1;
   color: #3182ce;
   color: rgba(49, 130, 206, var(--text-opacity));
 }
 
-.navbar-nav .nav-item.active a::before,
-.navbar-nav .nav-item.active a::after,
+.navbar-nav .nav-item a.active::before,
+.navbar-nav .nav-item a.active::after,
 .navbar-nav .nav-item a:hover::before,
 .navbar-nav .nav-item a:hover::after {
   opacity: 1;

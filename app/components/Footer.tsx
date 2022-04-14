@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 const Footer = () => {
   return (
     <footer id="footer" className="bg-gray-100 footer-area py-5">
@@ -12,13 +14,19 @@ const Footer = () => {
 
                 <ul>
                   <li>
-                    <a href="#">Our Skips</a>
+                    <Link to="/skips" prefetch="intent">
+                      Our Skips
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <Link to="/contact" prefetch="intent">
+                      Contact
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">FAQ</a>
+                    <Link to="/faq" prefetch="intent">
+                      FAQ
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -28,21 +36,21 @@ const Footer = () => {
                 <h6 className="footer-title">Get In Touch</h6>
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="tel:01895 820454">
                       Landline
                       <br />
                       <span className="font-light">01895 820454</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="tel:07766 391528">
                       Mobile
                       <br />
                       <span className="font-light">07766 391528</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="mailto:joseph@hepskiphire.co.uk">
                       Email
                       <br />
                       <span className="font-light">

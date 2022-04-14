@@ -1,9 +1,9 @@
 import { FC } from "react";
 
 type Props = {
-  isLoading: boolean;
+  isLoading?: boolean;
   label: string;
-  loadingLabel: string;
+  loadingLabel?: string;
 };
 const Button: FC<Props> = ({ isLoading, label, loadingLabel }) => {
   return (
