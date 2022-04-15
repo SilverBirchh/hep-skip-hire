@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="container px-24 flex flex-col gap-16 mb-10 mt-5">
         <div className="flex flex-col gap-5">
           <h2 className="font-bold text-5xl">Get in touch</h2>
-          <p className="tet-gray-400">
+          <p className="text-gray-400">
             If you have any questions please submit an enquiry, drop us an email
             or give us a call.
           </p>

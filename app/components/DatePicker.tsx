@@ -83,6 +83,7 @@ const ButtonInput = forwardRef(({ value, onClick }, ref) => (
         height: 0,
         width: 0,
       }}
+      readOnly
       className="hidden"
       name="date"
       value={!value ? "none" : format(new Date(value), "dd MMMM yyyy")}
