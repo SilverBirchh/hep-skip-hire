@@ -8,7 +8,7 @@ import OurService from "~/features/landing/components/OurService";
 export const meta: MetaFunction = () => ({
   title: "Hep Skip Hire",
   description:
-    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Buckinghamshire.",
 });
 
 export default function Index() {

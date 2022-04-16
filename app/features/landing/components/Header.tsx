@@ -109,7 +109,7 @@ function Header() {
                 <p className="px-5 mb-10 text-xl text-gray-700">
                   Friendly and reliable with competitive rates for household
                   clearances, garden clearances, trade waste and industrial
-                  waste
+                  waste.
                 </p>
                 <ul className="flex flex-wrap justify-center">
                   <li>

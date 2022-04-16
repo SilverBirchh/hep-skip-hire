@@ -31,7 +31,7 @@ const OurService = () => {
                   <div className="mb-8 ml-0 services-content media-body sm:ml-3">
                     <h4 className="services-title">Skip Hire</h4>
                     <p className="text">
-                      We offer skips of all sizes and we'll hlp you find the
+                      We offer skips of all sizes and we'll help you find the
                       perfect skip for the job.
                     </p>
                   </div>

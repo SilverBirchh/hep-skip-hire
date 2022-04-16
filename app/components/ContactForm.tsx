@@ -101,7 +101,7 @@ const ContactForm = () => {
           <p className="mx-4 form-message"></p>
           <div className="w-full">
             <div className="mx-4 mt-2 text-center single-form form-group">
-              <Button label="send message" loadingLabel="sending..." />
+              <Button label="Send Message" loadingLabel="sending..." />
             </div>
           </div>
         </div>

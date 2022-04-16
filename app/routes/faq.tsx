@@ -6,7 +6,7 @@ import { MetaFunction } from "@remix-run/node";
 export const meta: MetaFunction = () => ({
   title: "Hep Skip Hire | FAQs",
   description:
-    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Buckinghamshire.",
 });
 
 const FAQS = [
@@ -49,8 +49,8 @@ const FAQS = [
     question: "Where can my skip be placed?",
     Answer: () => (
       <>
-        Driveway, on road side with a council permit that we can obtain or wait
-        and load service.
+        On a driveway, on the road side with a council permit that we can obtain
+        or wait and load service.
       </>
     ),
   },
@@ -86,7 +86,15 @@ const FAQS = [
   },
   {
     question: "How do I order and how do I pay?",
-    Answer: () => <>Please call and we'll be happy to help.</>,
+    Answer: () => (
+      <>
+        Please{" "}
+        <Link to="/contact" className="text-blue-400 hover:underline">
+          call
+        </Link>{" "}
+        and we'll be happy to help.
+      </>
+    ),
   },
 ];
 
@@ -100,7 +108,7 @@ const FAQ = () => {
           <div className="text-gray-400">
             <p>Can't find the answer you're looking for?</p>
             <p>
-              React out to us through our{" "}
+              Reach out to us through our{" "}
               <Link to="/contact" className="text-blue-400 hover:underline">
                 contact form.
               </Link>
@@ -111,7 +119,7 @@ const FAQ = () => {
           {FAQS.map(({ question, Answer }) => (
             <div className="max-w-lg" key={question}>
               <p className="font-bold text-black">{question}</p>
-              <p className="font-light text-sm">{<Answer />}</p>
+              <p className="font-light">{<Answer />}</p>
             </div>
           ))}
         </div>

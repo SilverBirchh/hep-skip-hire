@@ -22,8 +22,9 @@ export const meta: MetaFunction = () => ({
   title: "Hep Skip Hire",
   viewport: "width=device-width,initial-scale=1",
   description:
-    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
-  keywords: "Skip Hire, London, Greater London, Hertfordshire and Bedfordshire",
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and buckinghamshire.",
+  keywords:
+    "Skip Hire, London, Greater London, Hertfordshire and Buckinghamshire",
 });
 
 export default function App() {

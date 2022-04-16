@@ -17,7 +17,7 @@ const SkipTypes: SkipDetails[] = [
     image: "https://via.placeholder.com/150",
     title: "6yd  Skip",
     size: "w: 1.7m, h: 1.1m, l: 1.9m",
-    description: "60-70 bin bags approx. Popular Household skip.",
+    description: "60-70 bin bags approx. Popular household skip.",
   },
   {
     image: "https://via.placeholder.com/150",
@@ -57,7 +57,7 @@ const SkipTypes: SkipDetails[] = [
 export const meta: MetaFunction = () => ({
   title: "Hep Skip Hire | Skip Guide",
   description:
-    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Buckinghamshire.",
 });
 
 const Skips = () => {
@@ -68,7 +68,7 @@ const Skips = () => {
         <div className="flex flex-col gap-5">
           <h2 className="font-bold text-5xl">Skip Guide</h2>
           <p className="text-gray-400 max-w-xl">
-            We have many different skips to suit your needs, if you are ensure
+            We have many different skips to suit your needs, if you are unsure
             which skip you might need please get in touch and we'll be happy to
             help. Please remember that all measurements are estimates.
           </p>
@@ -147,11 +147,12 @@ const Skips = () => {
                     If you have questions about our service please visit our{" "}
                     <Link to={"/faq"} className="text-blue-400 hover:underline">
                       FAQs
-                    </Link>{" "}
+                    </Link>
                     .
                   </p>
                   <p>
-                    If you need any advice of the skip that you need please{" "}
+                    If you need any advice or help choosing the skip that you
+                    need please{" "}
                     <Link
                       to={"/contact"}
                       className="text-blue-400 hover:underline"

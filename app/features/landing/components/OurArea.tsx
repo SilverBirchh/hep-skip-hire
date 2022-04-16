@@ -17,7 +17,7 @@ const OurArea = () => {
             <li className="font-bold text-2xl">London</li>
             <li className="font-bold text-2xl">Greater London</li>
             <li className="font-bold text-2xl">Hertfordshire</li>
-            <li className="font-bold text-2xl">Bedfordshire</li>
+            <li className="font-bold text-2xl">Buckinghamshire</li>
           </ul>
         </div>
       </div>

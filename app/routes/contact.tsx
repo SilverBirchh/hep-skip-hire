@@ -13,7 +13,7 @@ import { MetaFunction } from "@remix-run/node";
 export const meta: MetaFunction = () => ({
   title: "Hep Skip Hire | Contact",
   description:
-    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Buckinghamshire.",
 });
 
 const Contact = () => {
@@ -92,7 +92,7 @@ const Contact = () => {
                     <li>London</li>
                     <li>Greater London</li>
                     <li>Hertfordshire</li>
-                    <li>Bedfordshire</li>
+                    <li>Buckinghamshire</li>
                   </ul>
                 </a>
               </div>
