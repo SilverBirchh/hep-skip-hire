@@ -1,3 +1,4 @@
+import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
@@ -52,6 +53,12 @@ const SkipTypes: SkipDetails[] = [
     description: "Perfect for light bulky waste. Please call for more info.",
   },
 ];
+
+export const meta: MetaFunction = () => ({
+  title: "Hep Skip Hire | Skip Guide",
+  description:
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
+});
 
 const Skips = () => {
   return (

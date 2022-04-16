@@ -1,4 +1,4 @@
-import { NavLink } from "@remix-run/react";
+import { Link, NavLink } from "@remix-run/react";
 import classNames from "classnames";
 import { useRef } from "react";
 import { useScroll } from "~/hooks/useScroll";
@@ -113,9 +113,9 @@ function Header() {
                 </p>
                 <ul className="flex flex-wrap justify-center">
                   <li>
-                    <a className="mx-3 main-btn gradient-btn" href="#">
+                    <Link to="contact" className="mx-3 main-btn gradient-btn">
                       GET IN TOUCH
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

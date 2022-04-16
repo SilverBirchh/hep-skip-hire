@@ -1,6 +1,13 @@
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import { Link } from "@remix-run/react";
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => ({
+  title: "Hep Skip Hire | FAQs",
+  description:
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
+});
 
 const FAQS = [
   {

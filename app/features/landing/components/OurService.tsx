@@ -1,3 +1,10 @@
+import {
+  ClockIcon,
+  RefreshIcon,
+  TrashIcon,
+  TruckIcon,
+} from "@heroicons/react/solid";
+
 const OurService = () => {
   return (
     <section id="service" className="relative services-area py-120">
@@ -19,7 +26,7 @@ const OurService = () => {
               <div className="w-full md:w-1/2">
                 <div className="block mx-4 services-content sm:flex">
                   <div className="services-icon">
-                    <i className="lni-bolt"></i>
+                    <TrashIcon className="h-10 w-10 text-yellow-400" />
                   </div>
                   <div className="mb-8 ml-0 services-content media-body sm:ml-3">
                     <h4 className="services-title">Skip Hire</h4>
@@ -33,7 +40,7 @@ const OurService = () => {
               <div className="w-full md:w-1/2">
                 <div className="block mx-4 services-content sm:flex">
                   <div className="services-icon">
-                    <i className="lni-bar-chart"></i>
+                    <TruckIcon className="h-10 w-10 text-yellow-400" />
                   </div>
                   <div className="mb-8 ml-0 services-content media-body sm:ml-3">
                     <h4 className="services-title">Roll-on Roll-off</h4>
@@ -47,7 +54,7 @@ const OurService = () => {
               <div className="w-full md:w-1/2">
                 <div className="block mx-4 services-content sm:flex">
                   <div className="services-icon">
-                    <i className="lni-brush"></i>
+                    <ClockIcon className="h-10 w-10 text-yellow-400" />
                   </div>
                   <div className="mb-8 ml-0 services-content media-body sm:ml-3">
                     <h4 className="services-title">Wait and Load</h4>
@@ -61,7 +68,7 @@ const OurService = () => {
               <div className="w-full md:w-1/2">
                 <div className="block mx-4 services-content sm:flex">
                   <div className="services-icon">
-                    <i className="lni-bulb"></i>
+                    <RefreshIcon className="h-10 w-10 text-yellow-400" />
                   </div>
                   <div className="mb-8 ml-0 services-content media-body sm:ml-3">
                     <h4 className="services-title">Eco Friendly</h4>

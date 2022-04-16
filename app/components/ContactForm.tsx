@@ -1,3 +1,4 @@
+import { Form } from "@remix-run/react";
 import { useRef } from "react";
 import SkipSize from "~/components/SkipSize";
 import Button from "./Button";
@@ -7,7 +8,7 @@ const ContactForm = () => {
   let form = useRef<HTMLFormElement>(null);
   return (
     <div className="contact-form">
-      <form
+      <Form
         ref={form}
         onSubmit={() => form.current?.reset()}
         id="contact-form"
@@ -104,7 +105,7 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-      </form>
+      </Form>
     </div>
   );
 };

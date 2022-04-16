@@ -8,6 +8,13 @@ import {
   SunIcon,
 } from "@heroicons/react/solid";
 import ContactForm from "~/components/ContactForm";
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => ({
+  title: "Hep Skip Hire | Contact",
+  description:
+    "Skip Hire for household clearances, garden clearances, builders/trade waste, industrial/factory waste in London, Greater London, Hertfordshire and Bedfordshire.",
+});
 
 const Contact = () => {
   return (
