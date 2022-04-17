@@ -7,7 +7,7 @@ import {
 
 const OurService = () => {
   return (
-    <section id="service" className="relative services-area py-120">
+    <section id="service" className="relative services-area py-[120px]">
       <div className="container">
         <div className="flex">
           <div className="w-full mx-4 lg:w-1/2">

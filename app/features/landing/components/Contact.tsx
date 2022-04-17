@@ -2,7 +2,7 @@ import ContactForm from "~/components/ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-area py-120">
+    <section id="contact" className="contact-area py-[120px]">
       <div className="container">
         <div className="justify-center row">
           <div className="w-full mx-4 lg:w-1/2">

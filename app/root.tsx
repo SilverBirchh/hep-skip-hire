@@ -12,6 +12,12 @@ import styles from "./tailwind.css";
 import tailwind from "./styles/tailwind.css";
 
 export const links: LinksFunction = () => [
+  { rel: "preconnect", href: "https://fonts.gstatic.com" },
+  {
+    rel: "preload",
+    as: "font",
+    href: "https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap",
+  },
   { rel: "stylesheet", href: styles },
   { rel: "stylesheet", href: tailwind },
 ];
