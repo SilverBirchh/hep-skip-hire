@@ -2064,3 +2064,22 @@ p {
     width: 66.666667%;
   }
 }
+
+.reveal-in {
+  animation-name: reveal;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

@@ -1,20 +1,23 @@
-import { Form } from "@remix-run/react";
-import { useRef } from "react";
+import { Form, useTransition } from "@remix-run/react";
+import { useRef, useEffect } from "react";
 import SkipSize from "~/components/SkipSize";
 import Button from "./Button";
 import DatePicker from "./DatePicker";
 
 const ContactForm = () => {
-  let form = useRef<HTMLFormElement>(null);
+  let formRef = useRef<HTMLFormElement>(null);
+  const transition = useTransition();
+  const isSubmitting = transition.state === "submitting";
+
+  useEffect(() => {
+    if (!isSubmitting) {
+      formRef.current?.reset();
+    }
+  }, [isSubmitting]);
+
   return (
     <div className="contact-form">
-      <Form
-        ref={form}
-        onSubmit={() => form.current?.reset()}
-        id="contact-form"
-        method="post"
-        action="https://formspree.io/f/xknyqryq"
-      >
+      <Form ref={formRef} id="contact-form" method="post" action="/enquiry">
         <div className="row">
           <div className="w-full md:w-1/2">
             <div className="mx-4 mb-6 single-form form-group">
@@ -90,7 +93,7 @@ const ContactForm = () => {
             <div className="mx-4 mb-6 single-form form-group">
               <textarea
                 rows={5}
-                placeholder="Your Mesaage"
+                placeholder="Your Message"
                 name="message"
                 data-error="Please, leave us a message."
                 required
@@ -101,7 +104,11 @@ const ContactForm = () => {
           <p className="mx-4 form-message"></p>
           <div className="w-full">
             <div className="mx-4 mt-2 text-center single-form form-group">
-              <Button label="Send Message" loadingLabel="sending..." />
+              <Button
+                label="Send Message"
+                isLoading={transition.state === "submitting"}
+                loadingLabel="sending..."
+              />
             </div>
           </div>
         </div>

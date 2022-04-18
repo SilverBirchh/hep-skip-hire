@@ -103,15 +103,15 @@ function Header() {
           <div className="justify-center row">
             <div className="w-full lg:w-5/6 xl:w-2/3 flex flex-col items-center">
               <div className="pt-48 pb-64 text-center header-content">
-                <h3 className="mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl text-center">
+                <h3 className="reveal-in opacity-0 animation-delay-500 mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl text-center">
                   First Class Waste Management
                 </h3>
-                <p className="px-5 mb-10 text-xl text-gray-700">
+                <p className="px-5 mb-10 text-xl text-gray-700 reveal-in opacity-0 animation-delay-1500">
                   Friendly and reliable with competitive rates for household
                   clearances, garden clearances, trade waste and industrial
                   waste.
                 </p>
-                <ul className="flex flex-wrap justify-center">
+                <ul className="flex flex-wrap justify-center reveal-in opacity-0 animation-delay-2500">
                   <li>
                     <Link to="contact" className="mx-3 main-btn gradient-btn">
                       GET IN TOUCH
