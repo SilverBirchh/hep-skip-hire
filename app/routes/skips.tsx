@@ -1,4 +1,4 @@
-import { MetaFunction } from "@remix-run/node";
+import { LinksFunction, MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
@@ -54,6 +54,14 @@ const SkipTypes: SkipDetails[] = [
   },
 ];
 
+export const links: LinksFunction = () => [
+  {
+    rel: "prefetch",
+    as: "image",
+    href: "/stacked-skips.jpg",
+  },
+];
+
 export const meta: MetaFunction = () => ({
   title: "Hep Skip Hire | Skip Guide",
   description:
@@ -65,13 +73,20 @@ const Skips = () => {
     <div className="relative">
       <Header />
       <div className="container px-24 flex flex-col gap-16 mb-10 mt-5">
-        <div className="flex flex-col gap-5">
-          <h2 className="font-bold text-5xl">Skip Guide</h2>
-          <p className="text-gray-400 max-w-xl">
-            We have many different skips to suit your needs, if you are unsure
-            which skip you might need please get in touch and we'll be happy to
-            help. Please remember that all measurements are estimates.
-          </p>
+        <div className="flex gap-5 justify-between items-center flex-col sm:flex-row">
+          <div className="flex flex-col gap-5">
+            <h2 className="font-bold text-5xl">Skip Guide</h2>
+            <p className="text-gray-400 max-w-xl">
+              We have many different skips to suit your needs, if you are unsure
+              which skip you might need please get in touch and we'll be happy
+              to help. Please remember that all measurements are estimates.
+            </p>
+          </div>
+          <img
+            src="/stacked-skips.jpg"
+            alt="skips"
+            className="rounded shadow w-[300px]"
+          />
         </div>
         <div className="flex flex-col md:flex-row gap-10">
           <div className="max-w-xs flex flex-col gap-5"></div>

@@ -8,7 +8,15 @@ import {
   SunIcon,
 } from "@heroicons/react/solid";
 import ContactForm from "~/components/ContactForm";
-import { MetaFunction } from "@remix-run/node";
+import { LinksFunction, MetaFunction } from "@remix-run/node";
+
+export const links: LinksFunction = () => [
+  {
+    rel: "prefetch",
+    as: "image",
+    href: "/contact-skips.jpg",
+  },
+];
 
 export const meta: MetaFunction = () => ({
   title: "Hep Skip Hire | Contact",
@@ -21,12 +29,19 @@ const Contact = () => {
     <div className="relative">
       <Header />
       <div className="container px-24 flex flex-col gap-16 mb-10 mt-5">
-        <div className="flex flex-col gap-5">
-          <h2 className="font-bold text-5xl">Get in touch</h2>
-          <p className="text-gray-400">
-            If you have any questions please submit an enquiry, drop us an email
-            or give us a call.
-          </p>
+        <div className="flex gap-5 justify-between items-center flex-col sm:flex-row">
+          <div className="flex flex-col gap-5">
+            <h2 className="font-bold text-5xl">Get in touch</h2>
+            <p className="text-gray-400">
+              If you have any questions please submit an enquiry, drop us an
+              email or give us a call.
+            </p>
+          </div>
+          <img
+            src="/contact-skips.jpg"
+            alt="Contact Hep Skip Hire"
+            className="rounded shadow w-[300px]"
+          />
         </div>
         <div className="flex flex-col md:flex-row gap-10">
           <div className="max-w-xs flex flex-col gap-5">

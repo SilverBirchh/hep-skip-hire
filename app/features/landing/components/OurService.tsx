@@ -85,7 +85,11 @@ const OurService = () => {
       </div>
       <div className="services-image">
         <div className="image">
-          <img src="services.svg" alt="Services" />
+          <img
+            src="/roll-on.jpg"
+            alt="Services"
+            className="r rounded shadow aspect-[4/5] h-[500px]"
+          />
         </div>
       </div>
     </section>

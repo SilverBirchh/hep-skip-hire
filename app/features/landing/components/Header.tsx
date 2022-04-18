@@ -18,7 +18,7 @@ function Header() {
           <div className="row">
             <div className="w-full">
               <nav className="flex items-center justify-between navbar navbar-expand-md">
-                <a className="mr-4 navbar-brand" href="/">
+                <a className="mr-4 navbar-brand text-left" href="/">
                   <h1 className="text-2xl font-bold">
                     Hep <span className="text-yellow-400">Skip</span> Hire
                   </h1>
@@ -97,7 +97,10 @@ function Header() {
       <div
         id="home"
         className="relative z-10 header-hero"
-        style={{ backgroundImage: "url(/header-bg.jpg)" }}
+        style={{
+          backgroundImage: "url(/header-bg.jpg)",
+          backgroundPosition: "center",
+        }}
       >
         <div className="container">
           <div className="justify-center row">
