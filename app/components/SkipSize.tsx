@@ -1,7 +1,7 @@
 const SkipSize = () => {
   return (
-    <select name="skip-size">
-      <option selected>Skip Size</option>
+    <select name="skip-size" defaultValue="none">
+      <option value="none">Skip Size</option>
       <option value="4yd">4yd 35 bin bags approx</option>
       <option value="6yd">6yd 60 - 70 bin bags approx</option>
       <option value="3yd">8yd 75 - 85 bin bags approx</option>

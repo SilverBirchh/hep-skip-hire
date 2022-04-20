@@ -1,3 +1,4 @@
+import Image from "remix-image";
 import {
   ClockIcon,
   RefreshIcon,
@@ -85,10 +86,26 @@ const OurService = () => {
       </div>
       <div className="services-image">
         <div className="image">
-          <img
+          <Image
             src="/roll-on.jpg"
             alt="Services"
             className="r rounded shadow aspect-[4/5] h-[500px]"
+            responsive={[
+              {
+                size: {
+                  width: 296,
+                  height: 500,
+                },
+                maxWidth: 296,
+              },
+              {
+                size: {
+                  width: 592,
+                  height: 1000,
+                },
+                maxWidth: 592,
+              },
+            ]}
           />
         </div>
       </div>

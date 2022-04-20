@@ -13,6 +13,7 @@ import tailwind from "./styles/tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.gstatic.com" },
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preload",
     as: "font",
