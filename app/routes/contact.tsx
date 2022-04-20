@@ -38,6 +38,8 @@ const Contact = () => {
             </p>
           </div>
           <img
+            width="300px"
+            height="175px"
             src="/contact-skips.jpg"
             alt="Contact Hep Skip Hire"
             className="rounded shadow w-[300px]"

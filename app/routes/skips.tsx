@@ -90,6 +90,8 @@ const Skips = () => {
             </p>
           </div>
           <img
+            width="300px"
+            height="230px"
             src="/stacked-skips.jpg"
             alt="skips"
             className="rounded shadow w-[300px]"
