@@ -10,13 +10,9 @@ const SkipCard: FC<Props> = ({ skip }) => {
   return (
     <div className="max-w-sm h-full bg-white rounded-lg border border-gray-200 shadow-md flex flex-col">
       <div>
-        <img
-          className="rounded-t-lg aspect-video"
-          src="https://via.placeholder.com/350x200"
-          alt=""
-        />
+        <div className="rounded-t-lg aspect-video">{skip.image}</div>
       </div>
-      <div className="p-5 inline-flex flex-col h-full">
+      <div className="p-5 pt-0 inline-flex flex-col h-full">
         <div>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
             {skip.title}

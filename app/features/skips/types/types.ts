@@ -1,5 +1,5 @@
 export type SkipDetails = {
-  image: string;
+  image: React.ReactNode;
   title: string;
   size: string;
   description: string;

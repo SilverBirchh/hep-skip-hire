@@ -2,52 +2,59 @@ import { LinksFunction, MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
+import EightSkip from "~/features/skips/components/EightSkip";
+import FortySkip from "~/features/skips/components/FortySkip";
+import FourSkip from "~/features/skips/components/FourSkip";
+import SixteenSkip from "~/features/skips/components/SixteenSkip";
 import SkipCard from "~/features/skips/components/SkipCard";
+import TwelveSkip from "~/features/skips/components/TwelveSkip";
+import TwentySkip from "~/features/skips/components/TwentySkip";
 import { SkipDetails } from "~/features/skips/types/types";
+import SixSkip from "../features/skips/components/SixSkip";
 
 const SkipTypes: SkipDetails[] = [
   {
-    image: "https://via.placeholder.com/150",
+    image: <FourSkip />,
     title: "4yd  Skip",
     size: "w: 145cm, h: 95cm, l: 1.3m",
     description:
       "35 bin bags approx. Ideal for smaller jobs and garden clearances etc.",
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: <SixSkip />,
     title: "6yd  Skip",
     size: "w: 1.7m, h: 1.1m, l: 1.9m",
     description: "60-70 bin bags approx. Popular household skip.",
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: <EightSkip />,
     title: "8yd  Skip",
-    size: "w:1.7m, h:1.3m, l: 2.5m",
+    size: "w: 1.7m, h:1.3m, l: 2.5m",
     description:
       "75-85 bin bags approx. The most popular choice. Ideal for all jobs and the largest skip to be filled with hardcore or earth.",
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: <TwelveSkip />,
     title: "12yd Skip",
     size: "w: 1.7m, h: 1.85m, l: 3.1m",
     description:
       "140-160 bin bags approx. Great for large clear out jobs with large bulky items. Not to be filled with hardcore and soil.",
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: <SixteenSkip />,
     title: "16yd Skip",
     size: "w: 1.7m, h: 2m, l: 3.4m",
     description:
       "190-210 bin bags approx. The biggest skip we offer. Perfect for light bulky items. Not to be filled with hardcore and soil.",
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: <TwentySkip />,
     title: "20yd Skip",
     size: "For industrial and trade use",
     description: "Perfect for hardcore and soil. Please call for more info.",
   },
   {
-    image: "https://via.placeholder.com/150",
+    image: <FortySkip />,
     title: "40yd Skip",
     size: "For industrial and trade use",
     description: "Perfect for light bulky waste. Please call for more info.",
