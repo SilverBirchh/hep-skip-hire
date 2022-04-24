@@ -10,7 +10,7 @@ const EnquirySent = () => {
         <div className="flex flex-col gap-5">
           <h2 className="font-bold text-5xl">Enquiry Sent</h2>
           <p className="text-gray-400">
-            Thank you for you message. A member of the team will be in touch
+            Thank your for you message. A member of the team will be in touch
             shortly.
           </p>
           <Link to="/" className="main-btn gradient-btn self-start">
