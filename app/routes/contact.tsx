@@ -66,7 +66,7 @@ const Contact = () => {
             <div className="flex gap-5 items-center">
               <PhoneIcon className="h-5 w-5 text-yellow-400" />
               <div>
-                <a className="font-medium" href="tel:07766 391528">
+                <a className="font-medium" href="tel:01895 820454">
                   Landline
                   <br />
                   <span className="font-extralight">01895 820454</span>
@@ -102,7 +102,7 @@ const Contact = () => {
             <div className="flex gap-5 items-center">
               <MapIcon className="h-5 w-5 text-yellow-400" />
               <div>
-                <a className="font-medium" href="tel:07766 391528">
+                <p className="font-medium text-black">
                   Areas we cover
                   <br />
                   <ul className="font-extralight">
@@ -111,7 +111,7 @@ const Contact = () => {
                     <li>Hertfordshire</li>
                     <li>Buckinghamshire</li>
                   </ul>
-                </a>
+                </p>
               </div>
             </div>
           </div>

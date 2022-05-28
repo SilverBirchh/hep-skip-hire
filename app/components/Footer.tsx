@@ -68,7 +68,13 @@ const Footer = () => {
             Hep Skip Hire is registered in England & Wales. Number: 363118022.
           </p>
           <p className="text-2xs">Waste carriers Reg - CBDU360767</p>
-          <p className="text-2xs">© Hep Skip Hire. All rights reserved</p>
+          <p className="text-2xs">
+            © Hep Skip Hire. All rights reserved. Website by{" "}
+            <a className="hover:underline" href="https://welwyn.digital">
+              Welwyn Digital
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>
