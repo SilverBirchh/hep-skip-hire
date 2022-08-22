@@ -33,7 +33,11 @@ const generateMessage = (formData: FormData) => ({
 
 export const action: ActionFunction = async ({ request }) => {
   const formData = await request.formData();
-  if (!formData.get("name")) return null;
-  await sendgrid.send(generateMessage(formData));
-  return redirect("/enquiry-sent");
+  const email = formData.get("email")?.toString();
+  if (!email || !formData.get("name") || !email) return redirect("/");
+  if (/^\w+([.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    await sendgrid.send(generateMessage(formData));
+    return redirect("/enquiry-sent");
+  };
+  return null;
 };
