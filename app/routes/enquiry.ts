@@ -1,5 +1,6 @@
 import { ActionFunction, redirect } from "@remix-run/node";
 import sendgrid from "~/lib/sendgrid/index.server";
+import rateLimit from "~/utils/rate-limiting";
 
 const generateMessage = (formData: FormData) => ({
   to: ["fjh.solutions@gmail.com", "joseph@hepskiphire.co.uk"],
