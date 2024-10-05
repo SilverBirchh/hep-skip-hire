@@ -37,8 +37,13 @@ export const action: ActionFunction = async ({ request }) => {
   const email = formData.get("email")?.toString();
   if (!email || !formData.get("name") || !email) return redirect("/");
   if (/^\w+([.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    await sendgrid.send(generateMessage(formData));
-    return redirect("/enquiry-sent");
+    try {
+      await sendgrid.send(generateMessage(formData));
+      return redirect("/enquiry-sent");
+    } catch (e) {
+      console.error('Contact Error', e)
+      return redirect("/enquiry-failed");
+    }
   };
   return null;
 };
