@@ -96,7 +96,7 @@ function Header() {
 
       <div
         id="home"
-        className="relative z-10 header-hero"
+        className="relative z-10 header-hero bg-no-repeat bg-cover"
         style={{
           backgroundImage: "url(/header-bg.jpg)",
           backgroundPosition: "center",
